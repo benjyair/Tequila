@@ -1,0 +1,54 @@
+author: Benjy
+description: Benjy's Blog
+keyword: Benjy, benjy, BenjyAir, benjyair
+favicon: 
+
+excerpt_link: Read more
+
+menu:
+ Home: /
+ Tags: /tags/
+ Archives: /archives/
+ Read: /read/
+ About: /about/
+
+# highlight
+highlight:
+  tomorrow
+
+# catalog
+catalog: true
+
+# donate
+donate: false
+
+# qrcode
+qrcode: false
+
+# comment
+# you can set gitment or uyan
+
+comment: gitment
+
+# gitment config
+gitment_owner: benjyair
+gitment_repo: benjyair.github.io
+gitment_oauth_id: dcedaa7e13d42cbba2fa
+gitment_oauth_secret: 46e76c6466fd800188887c8a51735d2bf59f9753
+
+# uyan
+# if you want to use uyan as your blog comment, plz remove/comment out gitment config
+
+baidu_id: 
+
+about: 
+  banner: http://file.muyutech.com/about.jpg
+  avatar: https://avatars0.githubusercontent.com/u/8643712?s=460&v=4
+  description: "我大步走大步跑，我没有追才不会累"
+  github_username: benjyair
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: false
+  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
