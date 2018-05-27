@@ -18,7 +18,7 @@ highlight:
   tomorrow
 
 # catalog
-catalog: true
+catalog: false
 
 # donate
 donate: false
