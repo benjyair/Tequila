@@ -1,5 +1,5 @@
 ---
-title: PubDialog ---- 一个简单的提示对话框
+title: PubDialog--一个简单的提示对话框
 layout: post
 date: 2015/02/27 17:56:12
 tags : OpenSource
@@ -24,7 +24,7 @@ PubDialogFragment pubDialog = PubDialogFragment.newInstance(list, false);
 pubDialog.setItemClickListener(new PubDialogFragment.ItemClickListener() {
 
     @Override
-    public void onItemClick(View clickedView, DialogObject dialogObject, 
+    public void onItemClick(View clickedView, DialogObject dialogObject,
     	int groupIndex, int itemIndex) {
     	//在回调中处理事件
         Intent intent;

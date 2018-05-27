@@ -1,4 +1,4 @@
 ---
-title: 标签云
+title: Tags
 layout: tags
 ---

@@ -1,7 +1,7 @@
 author: Benjy
 description: Benjy's Blog
 keyword: Benjy, benjy, BenjyAir, benjyair
-favicon: 
+favicon:
 
 excerpt_link: Read more
 
@@ -9,6 +9,7 @@ menu:
  Home: /
  Tags: /tags/
  Archives: /archives/
+ Project: /project/
  Read: /read/
  About: /about/
 
@@ -39,9 +40,9 @@ gitment_oauth_secret: 46e76c6466fd800188887c8a51735d2bf59f9753
 # uyan
 # if you want to use uyan as your blog comment, plz remove/comment out gitment config
 
-baidu_id: 
+baidu_id:
 
-about: 
+about:
   banner: http://file.muyutech.com/about.jpg
   avatar: https://avatars0.githubusercontent.com/u/8643712?s=460&v=4
   description: "我大步走大步跑，我没有追才不会累"

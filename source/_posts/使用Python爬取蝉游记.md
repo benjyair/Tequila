@@ -1,5 +1,5 @@
 ---
-title: 使用 Python 抓取蝉游记
+title: 使用Python抓取蝉游记
 layout: post
 date: 2018/05/21 21:40:39
 tags : Python
@@ -15,7 +15,7 @@ tags : Python
 
 ### 使用 Charles 抓取 API、Header 以及 Cookie
 API：
-蝉游记虽然作为一款几年前的产品，不得不说系统还是设计的非常不错的，良好的 RESTful API 对我们来说非常友好。
+蝉游记虽然作为一款几年前的产品，不得不说系统还是设计的非常不错的(因为 ruby on rails ？)，良好的 RESTful API 对我们来说非常友好。
 * http://chanyouji.com/api/users/1.json?page=1 用户信息及游记列表
 * http://chanyouji.com/api/trips/310965.json   游记详情
 * http://chanyouji.com/api/users/map/1.json 旅行地图
@@ -48,7 +48,7 @@ cookies = response.cookies.get_dict()
 由于有 API 的缘故，我们数据抓取的工作量至少减少了 80% ，这里就不过多赘述。我们采用 requests 库来做网络请求，简单起见，没有使用多线程也没有使用代理，所以为了防止多次请求被拉黑，每次请求完随机 Sleep 几秒。
 
 ### 数据存储
-数据抓到了，接下来便是数据的存储。除了 JSON 数据，还需要把图片也一起存下来，毕竟图片是游记的基础。项目中我按下面的目录结构进保存：
+数据抓到了，接下来便是数据的存储。除了 JSON 数据，还需要把图片也一起存下来，毕竟图片是游记的基础。由于已经拿到了 JSON，这里我就不使用数据库了，使用文件按下面的目录结构进保存：
 ```bash
 |____data                       # 缓存目录
 | |____user_1                   # 用户数据目录
@@ -73,9 +73,11 @@ cookies = response.cookies.get_dict()
     }]
 }]}
 ```
-这里我使用 Python 的列表生成式只用一行代码完成 URL 的筛选，入参 days 即 trip_days。
+如此多层次的嵌套，一层一层解析下去代码少说十几行。这里我使用 Python 的列表生成式只用一行代码完成 URL 的筛选，入参 days 即 trip_days。
 ```python
 def parse_image_url(days):
     return [note['photo']['url'] for day in days for node in day['nodes'] for note in node['notes'] if note.get('photo')]
 ```
-[项目地址](https://github.com/benjyair/Taki) 
+
+[项目地址](https://github.com/benjyair/Taki)
+<br/>

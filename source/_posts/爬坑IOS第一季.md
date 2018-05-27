@@ -1,5 +1,5 @@
 ---
-title: 爬坑IOS——第一季
+title: 爬坑IOS第一季
 layout: post
 date: 2015/05/04 22:20:19
 tags : Swift
@@ -18,30 +18,30 @@ Swift 语法对 String 支持的并不如 Java 全面，有好多方法调用都
 *  拓展String
 */
 extension String {
-    
+
     /// 返回长度
     var length: Int {
         return count(self)
     }
-    
+
     func trim() -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
     }
-    
+
     func split(regularExpression : String) -> [String] {
         return self.componentsSeparatedByString(regularExpression)
     }
-    
+
     func substring(start : Int, end : Int) -> String {
         var si = getRange(start)!
         var ei = getRange(end)!
         return self.substringWithRange(Range<String.Index>(start: si, end: ei))
     }
-    
+
     func replace(oldChary : String, newChart : String) -> String {
         return self.stringByReplacingOccurrencesOfString(oldChary, withString: newChart, options: nil, range: nil)
     }
-    
+
     func getRange(index : Int) -> String.Index?{
         if(index > length){
             return nil
@@ -111,19 +111,19 @@ protocol NetCell{
 }
 
 class BaseViewController: UIViewController, NetCell{
-    
+
     func noNet(){
         self.presentViewController(buildAlert("网络不通，请检查后再试！"), animated: true, completion: nil)
     }
-    
+
     func noCoonection(){
         self.presentViewController(buildAlert("网络异常，请稍后再试！"), animated: true, completion: nil)
     }
-    
+
     func noCell(str : String){
         self.presentViewController(buildAlert(str), animated: true, completion: nil)
     }
-    
+
 }
 
 ```
@@ -176,12 +176,12 @@ func sendPost (url : String , data : String, delegate : NetCell, cell : (result:
     override func viewWillAppear(animated: Bool) {
         login()
     }
-    
+
     /**
     检查登陆
     */
     func login(){
-        
+
         if /* 你的逻辑 */ {
             var controller = getController("reg_nav") as! UINavigationController
             var reg = controller.childViewControllers[0] as! RegisterController
@@ -189,7 +189,7 @@ func sendPost (url : String , data : String, delegate : NetCell, cell : (result:
             self.presentViewController(controller, animated: true,completion: nil)
         }
     }
-    
+
 ```
 
 4、工具类
