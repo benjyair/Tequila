@@ -42,8 +42,8 @@ gitment_oauth_secret: 46e76c6466fd800188887c8a51735d2bf59f9753
 
 baidu_id:
 
+#  banner: http://file.muyutech.com/about.jpg
 about:
-  banner: http://file.muyutech.com/about.jpg
   avatar: https://avatars0.githubusercontent.com/u/8643712?s=460&v=4
   description: "我大步走大步跑，我没有追才不会累"
   github_username: benjyair

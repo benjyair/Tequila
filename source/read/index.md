@@ -1,6 +1,6 @@
 ---
 title: Read
-layout: post
+layout: about
 ---
 
 ### 2018-02

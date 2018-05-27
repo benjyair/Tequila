@@ -1,6 +1,6 @@
 ---
-title: About Benjy
-layout: post
+title: Benjy
+layout: about
 ---
 
 ### 关于我
