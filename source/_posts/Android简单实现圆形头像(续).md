@@ -2,7 +2,7 @@
 title: Android 简单实现圆形头像(续)
 layout: post
 date: 2014/10/11 21:16:25
-tags : 技术积累
+tags : Android
 ---
 
 上一篇文章里面详细讲解了用自己的方式实现圆形头像，如今发现之前的代码效率并不高，因为每次都要 createBitmap 和转换图片，createBitmap 是一件很费内存的事，而频繁转换是一件很费 cpu 的事，这样费手机资源肯定必然是不行的，并且随着自己对 Imageloader 的深入使用，发现使用 Imageloader 还有另外一种更简单的方法来实现这样的效果，或许能解决这样的问题。
@@ -31,7 +31,7 @@ Imageloader 的初始化方法没变，同上一篇 blog，这里只展示一下
 ```java
 //显示圆角的option
 public static DisplayImageOptions options ;
-	
+
 public static <T extends ImageView> void displayImage2Circle(T container， String url) {
     if(options == null){
         options = new DisplayImageOptions.Builder()
@@ -43,7 +43,7 @@ public static <T extends ImageView> void displayImage2Circle(T container， Stri
             .cacheOnDisk(true)
             .resetViewBeforeLoading(true)
             // 我们的图片大小是70dp 所以我这里半径=70*1.6 ，其他情况可以自己算，或者动态设置
-            .displayer(new RoundedBitmapDisplayer(112)) 
+            .displayer(new RoundedBitmapDisplayer(112))
             .build();
     }
 	ImageLoader.getInstance().displayImage(url, container, options);
@@ -54,10 +54,10 @@ public static <T extends ImageView> void displayImage2Circle(T container， Stri
 其他 displayer
 
 ```java
-displayer：  
-        RoundedBitmapDisplayer（int roundPixels）设置圆角图片  
-        FakeBitmapDisplayer（）这个类什么都没做  
-        FadeInBitmapDisplayer（int durationMillis）设置图片渐显的时间  
+displayer：
+        RoundedBitmapDisplayer（int roundPixels）设置圆角图片
+        FakeBitmapDisplayer（）这个类什么都没做
+        FadeInBitmapDisplayer（int durationMillis）设置图片渐显的时间
         SimpleBitmapDisplayer()正常显示一张图片
 ```
 

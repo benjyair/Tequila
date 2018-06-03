@@ -2,7 +2,7 @@
 title: 关于 WebView 因 url 重定向而导致无法 goBack 的问题
 layout: post
 date: 2014/11/11 23:13:50
-tags : 技术积累
+tags : Android
 ---
 
 最近项目中有一些界面需要嵌入 wap 页，在按返回键的时候让 WebView goBack, 大部分界面都是可以正常回退的,可是某些会重定向的地址却无法正常 goBack，原因是，退回重定向之前的 url 又被重定向了回来,网上的解决办法是自己控制一个 url 集合,我试了一下非常麻烦,因为我们还需要 goForward 功能,仅仅使用一个 LinkedList 还满足不了需求.最终还是放弃了这样的做法,后来终于在 stackOverflow 上找到了解决的办法,解决的方法真是格外的简单.直接看代码
@@ -27,7 +27,7 @@ webView.setWebViewClient(new WebViewClient() {
 
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String url) {
-		 
+
 		return false;
 	}
 });

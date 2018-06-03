@@ -2,7 +2,7 @@
 title: Android 简单实现圆形头像
 layout: post
 date: 2014/9/30 10:11:44
-tags : 技术积累
+tags : Android
 ---
 
 今天项目中即时通信工具部分要把好友头像由方形转换成圆形，大概也是跟上时代的潮流吧，毕竟连 QQ 都开始使用圆形头像了，我在这里记录一下修改过程。
@@ -18,7 +18,7 @@ tags : 技术积累
 ```java
 /**
  * 将图片转为圆型  不标准的图形从中心截取
- * 
+ *
  * @param bitmap
  * @return
  */
@@ -80,16 +80,16 @@ public static <T extends ImageView> void displayImage2Circle(T container, String
 ImageLoaderConfiguration 的 defaultDisplayImageOptions 方法需要一个 DisplayImageOptions 参数而 DisplayImageOptions 的参数的 imageScaleType 属性默认的是 ImageScaleType.IN_SAMPLE_POWER_OF_2 就是这个属性导致的图片不圆,查了一下文档
 
 ```java
-/** 
- * 图片的缩放方式 
- */  
-imageScaleType(ImageScaleType imageScaleType)  
-imageScaleType:  
-    EXACTLY :图像将完全按比例缩小的目标大小  
-    EXACTLY_STRETCHED:图片会完全缩放到目标大小  
-    IN_SAMPLE_INT:图像将被二次采样,并且倍数为整数倍  
-    IN_SAMPLE_POWER_OF_2:图片将降低2倍，直到下一减少步骤，使图像更小的目标大小  
-    NONE:图片不会调整  
+/**
+ * 图片的缩放方式
+ */
+imageScaleType(ImageScaleType imageScaleType)
+imageScaleType:
+    EXACTLY :图像将完全按比例缩小的目标大小
+    EXACTLY_STRETCHED:图片会完全缩放到目标大小
+    IN_SAMPLE_INT:图像将被二次采样,并且倍数为整数倍
+    IN_SAMPLE_POWER_OF_2:图片将降低2倍，直到下一减少步骤，使图像更小的目标大小
+    NONE:图片不会调整
 ```
 
 IN_SAMPLE_POWER_OF_2 模式下缩放是成倍缩放的所以导致实际显示的要比我设定的宽一些,改成 EXACTLY_STRETCHED 之后问题得到解决
@@ -103,17 +103,17 @@ IN_SAMPLE_POWER_OF_2 模式下缩放是成倍缩放的所以导致实际显示�
 ```java
 private void initImageLoader() {
 	DisplayImageOptions options = new DisplayImageOptions.Builder()
-    .showImageForEmptyUri(R.drawable.default_image) 
-    .showImageOnFail(R.drawable.default_image) 
-    .imageScaleType(ImageScaleType.EXACTLY_STRETCHED) 
-    .bitmapConfig(Config.RGB_565) 
+    .showImageForEmptyUri(R.drawable.default_image)
+    .showImageOnFail(R.drawable.default_image)
+    .imageScaleType(ImageScaleType.EXACTLY_STRETCHED)
+    .bitmapConfig(Config.RGB_565)
     .cacheInMemory(true)
     .cacheOnDisk(true)
     .resetViewBeforeLoading(true)
     .build();
-	
-	File cacheDir = StorageUtils.getOwnCacheDirectory(getApplicationContext(), Util.getCachePath()); 
-	
+
+	File cacheDir = StorageUtils.getOwnCacheDirectory(getApplicationContext(), Util.getCachePath());
+
 	ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this)
     .denyCacheImageMultipleSizesInMemory()
     .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
@@ -122,10 +122,10 @@ private void initImageLoader() {
     .diskCache(new UnlimitedDiscCache(cacheDir)) // 缓存路径
     .diskCacheSize(50 * 1024 * 1024)
     .diskCacheFileCount(100)
-    .defaultDisplayImageOptions(options) 
+    .defaultDisplayImageOptions(options)
     .build();
-	
-	 ImageLoader.getInstance().init(config);  
+
+	 ImageLoader.getInstance().init(config);
 
 }
 ```
