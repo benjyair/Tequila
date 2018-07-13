@@ -31,7 +31,7 @@ tags : C
 
 <br/>
 CMake 主配置文件
-```c
+```text
 cmake_minimum_required(VERSION 3.9)
 
 # 项目名
@@ -44,7 +44,7 @@ add_subdirectory(src)
 ```
 
 源码模块配置文件
-```c
+```text
 # PROJECT_SOURCE_DIR 是 CMake 定义的宏，指向项目根目录
 include_directories("${PROJECT_SOURCE_DIR}/include/util")    # Util *.h includes
 
@@ -54,7 +54,7 @@ add_library(util ${UTIL_SRC})
 ```
 
 测试用例目录
-```c
+```text
 include_directories("${PROJECT_SOURCE_DIR}/include/util")    # Util *.h includes
 
 # 生成可执行文件 test
@@ -64,7 +64,8 @@ target_link_libraries(test util)
 ```
 配置完成后，重新 Load 一下项目，在 Run Configurations 中便能看到我们的 test 程序了。 无论是代码跳转还是 Run 和 Debug 就也都能使用了。开发 Android 项目的感觉全都回来了。
 
-如果想使用命令行来编译则按照如下操作：
+<br/>
+当然，也可以在命令行中使用如下操作来编译：
 ```text
 cd build
 # 在 build 目录下编译整个项目是一个好习惯，否则所产生的 Makefile 文件会充斥在你的源代码中
