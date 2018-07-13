@@ -4,6 +4,8 @@ layout: about
 ---
 
 ### 2018
+黄金时代
+C Primer Plus
 霍乱时期的爱情
 
 ### 2017
