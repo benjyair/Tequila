@@ -4,6 +4,9 @@ layout: about
 ---
 
 ### 2018
+人生
+皮囊
+威尼斯日记
 黄金时代
 C Primer Plus
 霍乱时期的爱情
