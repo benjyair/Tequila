@@ -1,5 +1,5 @@
 ---
-title: Mac下使用VirtualBox搭建Ububtu编译环境
+title: Mac 下使用 VirtualBox 搭建 Ububtu 编译环境
 layout: post
 date: 2018/06/03 13:49:50
 tags : Linux

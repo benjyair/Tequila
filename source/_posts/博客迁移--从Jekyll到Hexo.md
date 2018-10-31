@@ -1,5 +1,5 @@
 ---
-title: 博客迁移--从Jekyll到Hexo
+title: 博客迁移--从 Jekyll 到 Hexo
 layout: post
 date: 2018/03/18 20:27:12
 tags : 生活感悟

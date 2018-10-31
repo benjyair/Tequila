@@ -1,5 +1,5 @@
 ---
-title: 使用Flask搭建蝉游记服务器
+title: 使用 Flask 搭建蝉游记服务器
 layout: post
 date: 2018/05/26 16:11:12
 tags : Python

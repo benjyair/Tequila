@@ -1,5 +1,5 @@
 ---
-title: CLion开发环境的配置与搭建
+title: CLion 开发环境的配置与搭建
 layout: post
 date: 2018/05/31 17:40:11
 tags : C

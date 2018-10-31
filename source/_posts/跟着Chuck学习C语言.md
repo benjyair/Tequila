@@ -1,5 +1,5 @@
 ---
-title: 跟着Chuck学习C语言
+title: 跟着 Chuck 学习 C 语言
 layout: post
 date: 2018/05/28 19:55:10
 tags : C
