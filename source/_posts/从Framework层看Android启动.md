@@ -10,28 +10,28 @@ init进程启动的过程比较复杂，但是在准备工作做好之后，会�
 
 ### Init 进程启动以及 Zygote 启动
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20141204181105.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20141204181105.jpg)
 
 上图是启动 Android 设备之后的进程，可以明显看到在 init 进程启动之后启动了 Zygote 进程，而 Zygote 作为之后的大部分进程的父进程存在。
 
 ### Zygote 启动应用程序
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20141204181056.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20141204181056.jpg)
 
 上图是 Zygote 进程启动应用程序的流程图，Zygote 进程调用 fork（）函数创建出 Zygote 子进程，子进程共享父进程的代码区和链接信息，但是注意，新的 Android 应用程序并非通过 fork（）来重新装载已有的进程代码区，而是动态的加载到复制出的Dalvik虚拟机上，而后，Zygote 进程将执行流程交给应用程序，Android 应用程序开始运行，新生的应用程序拥有 Zygote 的进程库和资源的链接信息，所以运行速度很快。
 
 ### Android Framework 的启动过程
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20141204181100.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20141204181100.jpg)
 
 上图是 Android Framework 的启动过程，Zygote 启动 Dalvik 虚拟机后，会在生成一个 Dalvik 虚拟机示例，以便运行名称为 SystemServer 的 Java 服务，SystemServer 用于运行 Audio Flinger 与 Surface Flinger 本地服务，运行完本地服务之后开始运行 Android Framework 的 Java 服务，也就是我们在 Android 系统架构图中 Application Framework 中的各种 Manager Server
 下图我们从代码层看 Android Framework 的启动过程
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20141204181052.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20141204181052.jpg)
 
 ### Binder IPC 机制
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20141204181047.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20141204181047.jpg)
 
 由于 Android 应用程序与系统服务不在同一个系统进程中，这里就引入的 Binder IPC 机制，服务使用者调用 foo（）服务代理函数，而后 foo（）服务代理函数通过 Binder RPC 调用 Foo 服务的 foo（）服务 Stub 函数
 

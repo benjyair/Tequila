@@ -5,7 +5,7 @@ date: 2017/03/18 20:27:12
 tags : Android
 ---
 
-前些日子从朋友那里得到了一部淘汰下来的 Nexus，Nexus 作为 Google 的亲儿子，对 Android 有着最新的适配，我自然是想给它刷一下最新的 AOSP 版本来体验新功能。搞完之后，也顺道把自己闲置下来的 LG 和 Moto 也一起刷了一下，在这里总结一下刷机的步骤，AOSP 的编译之后再写。
+最近一段时间在研究 Android 的 AOSP，打算拿淘汰下来的 Nexus 刷机练练手，顺道也把吃灰的树莓派利用起来。本篇主要总结了一下刷机的步骤，在树莓派上编译 AOSP 等之后再写。
 
 ### 工具准备
 在 Mac OS 上刷机需要使用 [Google SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools)，下载并解压，然后将 **platform-tools** 目录添加到环境变量。

@@ -11,7 +11,7 @@ tags : Android
 附上 Memory Analysis 插件的[下载地址](http://www.eclipse.org/mat/downloads.php)
 只使用DDMS也可以看出在activity切换过程中的内存变化，但是不能并发现问题的具体所在，所以我们需要MAT(Memory AnalysisTools)来分析具体是那个类引发的问题。上图
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20141111211142.png)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20141111211142.png)
 
 上图大家应该都看的懂吧，不懂的我简单说一下，也不要嫌弃我啰嗦:
 

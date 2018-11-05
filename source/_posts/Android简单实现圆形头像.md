@@ -71,7 +71,7 @@ public static <T extends ImageView> void displayImage2Circle(T container, String
 
 本以为已经大功告成，没想到使用之后却发现图片四周仿佛被切掉一部分一样，如图:
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20140930151619.png)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20140930151619.png)
 
 > * 起先以为是图片有白边，后来发现不是，[图片地址](http://img0.bdstatic.com/img/image/shouye/mxzyq-11795342220.jpg)
 > * 然后又以为是半径没算对,验证之后再次被排除
@@ -96,7 +96,7 @@ IN_SAMPLE_POWER_OF_2 模式下缩放是成倍缩放的所以导致实际显示�
 
 最后展示一下最终效果
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20140930154619.png)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20140930154619.png)
 
 以及 Image-Loader 的完整设置
 

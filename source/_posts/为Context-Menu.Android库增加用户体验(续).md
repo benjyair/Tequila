@@ -36,7 +36,7 @@ public View onCreateView(LayoutInflater inflater,
 该 Dialog 有大片的空白区域我顺便在下方做了一个小的 Tip 区，每次取出一条提示在里面展示。
 如图：
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20150228181307.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20150228181307.jpg)
 
 同时把这个项目放在Github上了
 

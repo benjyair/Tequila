@@ -9,7 +9,7 @@ tags : Swift
 
 ### 一个图
 
-![PubDialog](http://oneylt1vv.bkt.clouddn.com/20150515173315.png)
+![PubDialog](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20150515173315.png)
 
 ### 一段话
 

@@ -53,6 +53,6 @@ startActivity(i);
 
 ### 效果
 
-![tool-editor](http://oneylt1vv.bkt.clouddn.com/20150304132203.jpg)
+![tool-editor](https://blog-1251733178.cos.ap-beijing.myqcloud.com/20150304132203.jpg)
 
 [源码地址](https://github.com/BenjyAir/Sack)

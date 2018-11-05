@@ -54,7 +54,7 @@ pubDialog.show(getSupportFragmentManager(), "setting");
 
 ### 效果
 
-![PubDialog](http://oneylt1vv.bkt.clouddn.com/pubdialog_show_demo.gif)
+![PubDialog](https://blog-1251733178.cos.ap-beijing.myqcloud.com/pubdialog_show_demo.gif)
 
 * [项目地址](https://github.com/BenjyAir/PubDialog) (包含示例项目和lib库)
 
