@@ -4,6 +4,9 @@ layout: about
 ---
 
 ### 2018
+岛上书店
+21个项目玩转深度学习：基于TensorFlow的实践详解
+TensorFlow：实战Google深度学习框架
 巨流河
 人生
 威尼斯日记

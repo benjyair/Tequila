@@ -19,7 +19,7 @@ tags : Android
 
 ### 刷入第三方 Recovery（以 TWRP 为例）
 
-1、进入 [TWRP](https://twrp.me/) 官网，右上角 **Devices** 找到自己的设备，**Download Links** 下面随便选择一个下载，下载文件名如：twrp-recovery.img。
+1、进入 [TWRP](https://twrp.me/) 官网，右上角 **Devices** 找到自己的设备 **不同型号的 TWRP 不共用，切记**，**Download Links** 下面随便选择一个下载，下载文件名如：twrp-recovery.img。
 2、通过命令`adb reboot bootloader`进入 bootloader 模式。
 3、执行命令`fastboot flash recovery twrp-recovery.img`刷入 TWRP。
 4、执行命令`fastboot boot twrp-recovery.img`进入 TWRP。
