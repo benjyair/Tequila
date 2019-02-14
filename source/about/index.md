@@ -10,7 +10,7 @@ layout: about
 
 * 第一份实习工作，面试的 Java Web 工程师，却意外被 Android 老大纳入麾下，成了一名 Android 攻城狮。
 
-* 第一份正式工作，VP 特批进入京东金融，在开发完 Android 客户端之后又开发了 IOS 客户端。
+* 第一份正式工作，VP 特批进入京东金融，在开发完 Android 客户端之后又转战 IOS 方向，完成 IOS APP 的开发。
 
 * 在红茶移动，迎难而上变得习以为常，从 Application 到 Framework，从软件到硬件，从互联网到物联网，一直在把不擅长变的擅长。
 
@@ -18,7 +18,7 @@ layout: about
 从后端到客户端再到嵌入式，从 Java 到 Python 再到 C，学习的脚步一直没有停下过。所以这里主要分享我的技术积累以及一些读书笔记，偶尔加一些感悟。
 
 ### 其他方面的我
-* [蝉游记](http://chanyouji.com/users/658973)
+* [~~蝉游记~~](http://chanyouji.com/users/658973)(已停运)
 
 * [哔哩哔哩](https://space.bilibili.com/9101571/#/)
 
