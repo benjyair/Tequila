@@ -35,7 +35,7 @@ comment: gitment
 gitment_owner: benjyair
 gitment_repo: benjyair.github.io
 gitment_oauth_id: dcedaa7e13d42cbba2fa
-gitment_oauth_secret: 46e76c6466fd800188887c8a51735d2bf59f9753
+gitment_oauth_secret: 14304e8d3a2a99f6b064ec43183d17cffc174d6f
 
 # uyan
 # if you want to use uyan as your blog comment, plz remove/comment out gitment config
