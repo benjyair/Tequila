@@ -14,13 +14,18 @@ layout: about
 
 * 在红茶移动，迎难而上变得习以为常，从 Application 到 Framework，从软件到硬件，从互联网到物联网，一直在把不擅长变的擅长。
 
+* 最近的我，工作之余更多的时间在学习音乐方面的知识，已经成为一名合格的初级鼓手。
+
 ### 关于这里
 从后端到客户端再到嵌入式，从 Java 到 Python 再到 C，学习的脚步一直没有停下过。所以这里主要分享我的技术积累以及一些读书笔记，偶尔加一些感悟。
 
 ### 其他方面的我
-* [~~蝉游记~~](http://chanyouji.com/users/658973)(已停运)
 
-* [哔哩哔哩](https://space.bilibili.com/9101571/#/)
+* [哔哩哔哩](https://space.bilibili.com/9101571/#/)（视频游记，架子鼓演奏）
+
+* [什么值得买](https://zhiyou.smzdm.com/member/9587719544/)（文字游记）
+
+* [~~蝉游记~~](http://chanyouji.com/users/658973)(已停运)
 
 * [Github](https://github.com/benjyair)
 
