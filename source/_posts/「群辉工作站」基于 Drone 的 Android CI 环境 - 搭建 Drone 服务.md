@@ -1,5 +1,5 @@
 ---
-title: 「群辉工作站」搭建 Drone CI 环境
+title: 「群辉工作站」基于 Drone 的 Android CI 环境 - 搭建 Drone 服务
 layout: post
 date: 2021/02/26 19:50:12
 tags : Docker
@@ -121,6 +121,5 @@ steps:
 ```
 
 ### 最后
-<br/>
 到这里 Drone 这个轮子就算完成了。
 <br/>

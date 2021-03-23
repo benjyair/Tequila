@@ -1,5 +1,5 @@
 ---
-title: 「群辉工作站」搭建 Gitea
+title: 「群辉工作站」基于 Drone 的 Android CI 环境 - 搭建 Gitea
 layout: post
 date: 2021/02/24 20:10:44
 tags : Docker
