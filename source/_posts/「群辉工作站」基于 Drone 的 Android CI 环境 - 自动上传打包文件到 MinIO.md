@@ -107,7 +107,7 @@ name: android
 
 steps:
   - name: build
-    image: benjyair/android-env-gradle
+    image: benjyair/android-env
     commands:
       - gradle assembleEngRelease
 
@@ -132,6 +132,6 @@ steps:
 提交到 Gitea 后，等 Drone Job 执行完成，在 MinIO 的控制台我们就能看到此次编译的 APK 已经完成了上传。
 
 ### 写在最后
-至此，我就在群辉上完整的搭建了一套 Android CI 环境。磕磕绊绊，踩坑无数。系统的学习了 Docker 的使用、Docker 镜像的制作、Docker Compose 的使用，以及涉及到的和常用的一些 Docker 镜像，也了解了 Docker Machine、Docker Swarm 等集群的概念。还让在角落里的群辉发光发热，以上，真值得开心和记录的事情。
+至此，我就在群辉上完整的搭建了一套 Android CI 环境。磕磕绊绊，踩坑无数。系统的学习了 Docker 的使用、Docker 镜像的制作、Docker Compose 的使用，以及涉及到的和常用的一些 Docker 镜像，也了解了 Docker Machine、Docker Swarm 等集群的概念。还让在角落里的群辉发光发热，以上，真是值得开心和记录的事情。回想起 2013 年为了学习 OpenStack 而借了两台电脑搞集群的情景，不得不佩服 Docker 的强大，以及科技发展带来的便利性。
 <br/>
 除去项目中列出的配置，整个项目的源码我放在[这里](https://github.com/benjyair/Draque) ，需要的可以自取。
