@@ -34,6 +34,7 @@ services:
     image: drone/drone:latest
     container_name: drone-server
     restart: always
+    privileged: true
     volumes:
       - ./data:/var/lib/drone
     ports:
@@ -52,12 +53,14 @@ services:
       - DRONE_DATABASE_DRIVER=sqlite3
       - DRONE_SERVER_PROTO=http
       - DRONE_RPC_SECRET=b7dd563fac66927c8ca6bb6a777bb723
+      - DRONE_USER_CREATE=username:benjyair,admin:true 
       - TZ=Asia/Shanghai
       - DOCKER_API_VERSION=1.39
   drone-runner:
     image: drone/drone-runner-docker:latest
     container_name: drone-runner
     restart: always
+    privileged: true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
@@ -83,6 +86,8 @@ deployment: Error response from daemon: client version 1.40 is too new. Maximum 
 $ openssl rand -hex 16
 b7dd563fac66927c8ca6bb6a777bb723
 ```
+`DRONE_USER_CREATE=username:benjyair,admin:true` 创建管理员用户，只有管理员才能打开「Project settings」中的「Trusted」选项。
+<br/>
 
 进入 Shell 开始创建
 ```shell
