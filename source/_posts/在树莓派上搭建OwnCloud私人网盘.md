@@ -2,7 +2,7 @@
 title: 在树莓派上搭建 ownCloud 私人网盘
 layout: post
 date: 2018/07/28 16:11:12
-tags : 树莓派
+tags : Linux
 ---
 两年前买了一台树莓派，放在手里已经吃灰好久了，最近玩 C 语言又拿了出来，主要用它来编译一下项目（Mac OS 不区分大小写，引用的某些库在 Mac 下是无法编译），不过两台机器之间文件互传也是很麻烦。后来在树莓派上折腾 NAS ([ownCloud](https://owncloud.org/)) 的时候忽然发现了一条新的路子，把 Mac 上的工作目录放在 NAS 下，修改的代码自动同步到树莓派上，然后 SSH 过去编译，编译完成后生成的库文件也会自动同步回我的 Mac 上，完美。
 <br/>
@@ -44,7 +44,7 @@ MariaDB [(none)]> flush privileges;
 
 MariaDB [(none)]> exit;
  Bye
- ```
+```
 
 ### 安装 PHP 及依赖组件
 ```shell
